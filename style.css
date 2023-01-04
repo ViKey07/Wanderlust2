@@ -3,9 +3,8 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.home-icon{
-    width:20%;
-}
+
+/* ************************************** Navbar ************************************** */
 
 .navbar {
     display: flex;
@@ -28,22 +27,154 @@ body{
     padding-right: 35px;
 }
 
-.home-p{
+.home-h6{
     font-size: medium;
-    /* font-weight: lighter; */
+    font-weight: lighter;
+    margin: 0;
 }
+
+/* ************************************** Homepage ************************************** */
 
 .main-bg{
     
     width: 100%;
 }
 
-.bg-overlay{
+input.text {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Raleway';
+    outline: none;
+}
+
+h3.heading {
+    position: absolute;
+    color: white;
+    margin-top: 26%;
+    font-family: Raleway;
+    font-size: xxx-large;
+    left: 50%;
+    font-size: clamp(1.3rem,5vw, 4rem);
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: 100;
+    top: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 35%;
+    left: 50%;
+    font-size: clamp(1.3rem,5vw, 4rem);
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: 0;
+    position: absolute;
+}
+
+/* ********************************* Section (Tourist Attraction) ********************************* */
+
+p#scroll-bar-title{
+    text-align: center;
+    font-family: 'Raleway';
+    padding-top: 15px;
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.symbol{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scard{
+    margin: 2%;
+    position: relative;
+    width: 45%;
+    width: 200px;
+    transition: transform 0.5s;
+    
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.scard-img{
+    width: 100%;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.scard:hover{
+    transform: scale(1.2);
+}
+
+.scard-title{
+    text-align: center;
+    margin: 10px 0;
+    padding-left: 1%;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: clamp(0.6rem, 3vw, 1rem);
+}
+
+.scard-text{
+    padding-left: 1%;
+    font-family: 'Raleway';
     
 }
-.blur-bg {
 
+.scard-body{
+    padding: 0 3%;
 }
-input.text {
 
+.tourists-attractions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin: 2%;
+    position: relative;
+    width: 45%;
+    max-width: 650px;
+    min-width: 325px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-title{
+    margin: 10px 0;
+    padding-left: 1%;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.card-text{
+    padding-left: 1%;
+    font-family: 'Raleway';
+    font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.card-body{
+    padding: 0 3%;
 }
