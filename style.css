@@ -238,7 +238,7 @@ p#scroll-bar-title{
     padding: 10px 30px;
     border: none;
     border-radius: 100px;
-    background-color: rgb(249, 246, 246);
+    background-color: white;
     width: 50%;
     margin: 0 auto;
     position: absolute;
@@ -248,6 +248,15 @@ p#scroll-bar-title{
     transform: translateX(-50%);
     white-space: nowrap;
     top: 0;
+}
+
+input.offer{
+    width: 100%;
+    border: none;
+}
+
+input.offer:focus{
+    outline: none;
 }
 
 .map-img{
@@ -307,4 +316,39 @@ ul{
 
 li{
     padding-bottom: 10px;
+}
+
+/* ********************************* Page 2 ********************************* */
+
+/* ********************************* Page 2 Homepage ********************************* */
+
+.details-page{
+    position: relative;
+}
+
+.details-page-image{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/* ==================================== page 2 details div ======================================= */
+
+.detail-info{
+    padding: 20px 100px;
+}
+
+.layover{
+    position: absolute;
+    /* background-color: brown; */
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    padding: 0px 50px 70px 0px;
+    display: flex;
+    align-items: baseline;
+}
+
+.layover img {
+    margin: 10px;
 }
