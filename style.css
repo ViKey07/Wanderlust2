@@ -200,6 +200,13 @@ p#scroll-bar-title{
     left: 50%;
     transform: translate(-50%);
 }
+.head-dis p {
+    margin: 0;
+    font-size: clamp(1rem, 3vw, 5rem);
+}
+
+
+
 
 .offer{
     position: relative;
@@ -335,20 +342,67 @@ li{
 /* ==================================== page 2 details div ======================================= */
 
 .detail-info{
-    padding: 20px 100px;
+    padding: 0px 50px;
 }
 
 .layover{
     position: absolute;
-    /* background-color: brown; */
     z-index: 2;
     bottom: 0;
     right: 0;
-    padding: 0px 50px 70px 0px;
+    padding: 0px 0px 50px 0px;
     display: flex;
     align-items: baseline;
 }
 
 .layover img {
     margin: 10px;
+    width: 18%;
 }
+
+
+@media only screen and (max-width : 500px) {
+    div.symbol{
+        padding: 0;
+    }
+    .head-dis{
+        line-height: 0.8;
+    }
+    div.home-nav{
+        display: none;
+    }
+    div.links, div.address {
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    div.layover{
+        padding: 0;
+    }
+
+    p.detail-info-para{
+        font-size: clamp(0.8rem, 3vw, 1rem);
+    }
+   div iframe.yt{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width : 600px) {
+
+   div iframe.yt{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width : 900px) {
+
+    iframe.yt{
+        width: 300px;
+        height: 250px;
+    }
+}
+
